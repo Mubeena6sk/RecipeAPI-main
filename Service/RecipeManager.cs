@@ -25,6 +25,23 @@ namespace RecipeAPI.Service
                      {
                          i.Rname,
                          i.Instructions,
+                         i.Rcuisine,
+                         i.Rimage
+                     });
+
+            return q;
+        }
+
+        public dynamic SearchforRecipebycuisine(string cuisine)
+        {
+            var q = (from i in _context.Recipes
+                     where i.Rcuisine == cuisine
+                     select new
+                     {
+                         i.Rname,
+                         i.Instructions,
+                         i.Rcuisine,
+                         i.Rimage
                      });
 
             return q;

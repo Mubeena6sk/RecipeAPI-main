@@ -11,4 +11,3 @@ namespace RecipeAPI.Models
         public int Rid { get; set; }
     }
 }
-//

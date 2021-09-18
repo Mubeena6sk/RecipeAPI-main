@@ -105,6 +105,15 @@ namespace RecipeAPI.Controllers
             return rmanager.SearchforRecipe(ingre);
         }
 
+        //Find recipe by cuisine
+        [HttpGet("items/{cuisine}")]
+        public dynamic FindRecipebycuisine(string cuisine)
+        {
+
+            _log4net.Info("Searching Recipe with ingredient " + cuisine);
+            return rmanager.SearchforRecipebycuisine(cuisine);
+        }
+
         //Display User Recipes
         [HttpGet("/myrecipe")]
         public dynamic MyRecipes()

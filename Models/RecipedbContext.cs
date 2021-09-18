@@ -71,7 +71,7 @@ namespace RecipeAPI.Models
                     .WithMany(p => p.IngredientsIndices)
                     .HasForeignKey(d => d.Rid)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Ingredients__RId__38996AB5");
+                    .HasConstraintName("FK__Ingredients__RId__6FE99F9F");
             });
 
             modelBuilder.Entity<MyRecipe>(entity =>
@@ -82,13 +82,20 @@ namespace RecipeAPI.Models
             modelBuilder.Entity<Recipe>(entity =>
             {
                 entity.HasKey(e => e.Rid)
-                    .HasName("PK__Recipes__CAFF40D239B2371E");
+                    .HasName("PK__tmp_ms_x__CAFF40D2CCF45AFA");
 
                 entity.Property(e => e.Rid).HasColumnName("RId");
 
                 entity.Property(e => e.Instructions)
                     .HasMaxLength(5000)
                     .IsUnicode(false);
+
+                entity.Property(e => e.Rcuisine)
+                    .HasMaxLength(100)
+                    .IsUnicode(false)
+                    .HasColumnName("RCuisine");
+
+                entity.Property(e => e.Rimage).HasColumnName("RImage");
 
                 entity.Property(e => e.Rname)
                     .HasMaxLength(100)
@@ -109,4 +116,3 @@ namespace RecipeAPI.Models
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }
-//

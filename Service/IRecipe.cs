@@ -9,6 +9,7 @@ namespace RecipeAPI.Service
     public interface IRecipe
     { 
         dynamic SearchforRecipe(string ingredient);
+        dynamic SearchforRecipebycuisine(string cuisine);
         dynamic DisplayUserRecipe();
         void AddRecipeToUser(int id);
         bool RecipeExists(int id);

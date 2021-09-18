@@ -9223,11 +9223,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mshaik\\demo_projects\\RecipeAPI-main\\RecipeAPI-main\\RecipeAPI.csproj",
+      "projectUniqueName": "C:\\Users\\mshaik\\demo_projects\\RecipeAPI-main\\RecipeAPI.csproj",
       "projectName": "RecipeAPI",
-      "projectPath": "C:\\Users\\mshaik\\demo_projects\\RecipeAPI-main\\RecipeAPI-main\\RecipeAPI.csproj",
+      "projectPath": "C:\\Users\\mshaik\\demo_projects\\RecipeAPI-main\\RecipeAPI.csproj",
       "packagesPath": "C:\\Users\\mshaik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mshaik\\demo_projects\\RecipeAPI-main\\RecipeAPI-main\\obj\\",
+      "outputPath": "C:\\Users\\mshaik\\demo_projects\\RecipeAPI-main\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mshaik\\AppData\\Roaming\\NuGet\\NuGet.Config",

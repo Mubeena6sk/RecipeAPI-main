@@ -14,6 +14,8 @@ namespace RecipeAPI.Models
 
         public int Rid { get; set; }
         public string Rname { get; set; }
+        public string Rcuisine { get; set; }
+        public byte[] Rimage { get; set; }
         public string Instructions { get; set; }
 
         public virtual ICollection<IngredientsIndex> IngredientsIndices { get; set; }
